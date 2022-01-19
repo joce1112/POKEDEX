@@ -64,8 +64,8 @@ const back =()=>{if(pokemon.id===1 || (isNaN(pokemon.id))){
     <div className="App">
       <header className="App-header">
         <div className='flex-container'>
-        <img src={pokemon?.sprites?.back_default ?? "https://cdn.streamloots.com/uploads/5e8e4245ecb3f00038dfdfc9/0266678b-a53e-4b74-8e23-06c3bb1cccf2.png"} className="poke-image"  />
-        <img src={pokemon?.sprites?.front_default??"https://cdn.streamloots.com/uploads/5e553c848b251c002d741498/edf10688-62e5-4a36-b4a0-e78360df107e.png"} className="poke-image"   />
+        <img src={pokemon?.sprites?.back_default ?? "https://cdn.streamloots.com/uploads/5e8e4245ecb3f00038dfdfc9/0266678b-a53e-4b74-8e23-06c3bb1cccf2.png"} alt="logo" className="poke-image"  />
+        <img src={pokemon?.sprites?.front_default??"https://cdn.streamloots.com/uploads/5e553c848b251c002d741498/edf10688-62e5-4a36-b4a0-e78360df107e.png"} alt="logo" className="poke-image"   />
     
         </div>
         <div>
@@ -77,7 +77,6 @@ const back =()=>{if(pokemon.id===1 || (isNaN(pokemon.id))){
         style={customStyles}
         contentLabel="Modal"
         ariaHideApp={false}
-        contentLabel="Selected Option"
     >
         <h2 ref={(_subtitle) => (subtitle = _subtitle)}>{pokemon.name}</h2>
         <h3 ref={(_subtitle) => (subtitle = _subtitle)}>{'N°0'+pokemon.id}</h3>
