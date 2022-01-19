@@ -95,11 +95,11 @@ const back =()=>{if(pokemon.id===1 || (isNaN(pokemon.id))){
         </div>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/joce1112/POKEDEX"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Repository
         </a>
       </header>
     </div>
